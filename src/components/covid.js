@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-import LiveIcon from '../images/radio-antenna.png'
+import LiveIcon from '../images/radio-antenna.png';
+import CountUp from 'react-countup';
 
 function Covid() {
 
@@ -39,25 +40,25 @@ function Covid() {
                     <div className="col-sm-4">
                         <div className="item text-center">
                             <h3><span>Total</span> Confirmed Cases</h3>
-                            <h4>{data.confirmed}</h4>
+                            <h4><CountUp start={0} end={data.confirmed} delay={1} /></h4>
                         </div>
                     </div>
                     <div className="col-sm-4">
                         <div className="item text-center">
                             <h3>Total Deaths</h3>
-                            <h4>{data.deaths}</h4>
+                            <h4><CountUp start={0} end={data.deaths} delay={1} /></h4>
                         </div>
                     </div>
                     <div className="col-sm-4">
                         <div className="item text-center">
                             <h3>Total Active</h3>
-                            <h4>{data.active}</h4>
+                            <h4><CountUp start={0} end={data.active} delay={1} /></h4>
                         </div>
                     </div>
                     <div className="col-sm-4">
                         <div className="item text-center">
                             <h3>Total Recovered</h3>
-                            <h4>{data.recovered}</h4>
+                            <h4><CountUp start={0} end={data.recovered} delay={1} /></h4>
                         </div>
                     </div>
                     <div className="col-sm-4">

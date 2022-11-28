@@ -9,9 +9,6 @@ import PdfIcon from '../images/pdficon.svg';
 import Covid from '../components/covid';
 
 function Home() {
-
-
-
     
   return (
     <>
